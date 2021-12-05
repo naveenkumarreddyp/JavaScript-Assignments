@@ -11,6 +11,17 @@ function getEven(arr) {
     return evenElementsArr;
 }
 
+function getEven1(arr){
+    let evenElements=[]
+    for(i=0; i<arr.length;i++){
+        if (arr[i]%2 === 0){ //value and data type
+            evenElements.push(arr[i])
+        }
+
+    }
+    return evenElements;
+}
+
 function multiplyByN(arr, n) {
     /* 
         Return an array whose elements are multiplied by n
@@ -36,6 +47,16 @@ function removeNthElement(arr, n) {
     */
     arr.splice(n,1);
     return arr;
+}
+
+function removeNthElement1(arr,n){
+    let ansArr=[];
+    for (i=0; i<arr.length;i++){
+        if (arr[i] !== n){
+            ansArr.push(arr[i])
+        }
+    }
+    return ansArr;    
 }
 
 module.exports = {

@@ -9,6 +9,7 @@ button.addEventListener('click', function(){
     paragraph.setAttribute('key',keyCount)
     list.appendChild(paragraph)
     keyCount+=1
+    input.value = ""
     paragraph.addEventListener('click', function(){
         list.removeChild(paragraph)
     })
